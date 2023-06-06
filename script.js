@@ -46,3 +46,29 @@ const getProfit = (buyPrice, sellPrice) => {
 };
 const beauty= getProfit(500.4, 700);
 console. log(beauty);
+
+// 6. დაწერეთ ფუნქცია, რომელიც მიიღებს ობიექტების მასივს 
+// (ობიექტს უნდა ქონდეს ველი name) და მეორე პარამეტრად
+//  მიიღებს სტრინგს და ამ მასივში .find ით მოვძებნოთ
+//   ობიექტის name === ფუნქციის მეორე პარამეტრს და 
+//   დავაბრუნოთ ნაპოვნი ობიექტი.
+
+const persons = [{
+  name: "andria",
+  age: 21,
+},
+{
+  name: "nikolozi",
+  age: 30,
+},
+{
+  name: "marta",
+  age: 25,
+}
+];
+
+const findPerson = (persons, name) => {
+  const person = persons.find((person) => person.name === name);
+  console.log(person);
+};
+findPerson(persons,"andria");
